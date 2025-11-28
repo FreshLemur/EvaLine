@@ -419,6 +419,72 @@ main {
       }
     }
   }
+
+  .application-ways {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .application-ways__title {
+      text-align: center;
+    }
+
+    .application-ways__flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 35px;
+      justify-content: center;
+
+      .application-ways__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        width: 283px;
+        height: 246px;
+        padding: 30px;
+        background-color: #fff4d6;
+
+        .application-ways__card-header__wrapper {
+          display: flex;
+          gap: 12px;
+
+          .application-ways__icon {
+            width: 40px;
+            height: 40px;
+          }
+
+          .application-ways__heading {
+            font-size: 24px;
+          }
+        }
+        .application-ways__list {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          .application-ways__item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            .application-ways__item-title {
+              font-weight: 400;
+              font-size: 17px;
+              line-height: 150%;
+              letter-spacing: 0%;
+              color: #212529cc;
+            }
+
+            .application-ways__item-icon {
+              width: 8px;
+              height: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1439px) {
@@ -541,6 +607,16 @@ main {
               width: 335px;
             }
           }
+        }
+      }
+    }
+
+    .application-ways {
+      .application-ways__flex {
+        gap: 20px;
+
+        .application-ways__card {
+          width: 335px;
         }
       }
     }
@@ -673,6 +749,24 @@ main {
           li:nth-of-type(1),
           li:nth-of-type(2) {
             margin: 0;
+          }
+        }
+      }
+    }
+
+    .application-ways {
+      gap: 20px;
+
+      .application-ways__flex {
+        gap: 10px;
+
+        .application-ways__card {
+          height: 236px;
+
+          .application-ways__card-header__wrapper {
+            .application-ways__heading {
+              font-size: 20px;
+            }
           }
         }
       }
