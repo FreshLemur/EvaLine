@@ -55,6 +55,25 @@ h3 {
   color: var(--color-black);
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+}
+
+h3 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+picture {
+  display: block;
+}
+
 .logo {
   width: 120px;
 }
@@ -62,22 +81,25 @@ h3 {
 header {
   position: fixed;
   top: 0;
-  width: 1440px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
   height: 140px;
-
-  & > a,
-  button {
-    display: none;
-  }
+  background-color: #f5f9fb;
+  padding-bottom: 5px;
 
   svg {
     width: 15px;
   }
 
-  & > div:first-of-type {
+  .header-top-desktop,
+  .header-bottom-desktop {
+    margin-inline: auto;
+    width: 1440px;
+  }
+
+  .header-top-desktop {
     padding-inline: var(--desktop-global-padding-inline);
     display: flex;
     justify-content: space-between;
@@ -105,7 +127,7 @@ header {
     }
   }
 
-  & > div:last-of-type {
+  .header-bottom-desktop {
     padding-inline: var(--desktop-global-padding-inline);
     display: flex;
     justify-content: space-between;
@@ -136,10 +158,20 @@ header {
       }
     }
   }
+
+  .header-mobile {
+    display: none;
+  }
 }
 
 main {
+  overflow: hidden;
   margin-top: 244px;
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  width: 1440px;
+  margin-inline: auto;
 
   .foamiran-wholesale-supplies {
     display: flex;
@@ -172,10 +204,6 @@ main {
           }
 
           h2 {
-            font-weight: 700;
-            font-size: 50px;
-            line-height: 110.00000000000001%;
-            letter-spacing: 0%;
             width: 90%;
           }
         }
@@ -230,15 +258,174 @@ main {
     }
 
     picture {
+      width: 495px;
+      height: 479px;
       img {
         width: 495px;
         height: 479px;
       }
     }
   }
+
+  .offer {
+    display: flex;
+    background-color: #fff4d6;
+
+    & > div:first-of-type {
+      position: relative;
+
+      picture {
+        width: 667px;
+        height: 724px;
+        img {
+          width: 667px;
+          height: 724px;
+        }
+      }
+
+      .offer-puzzle {
+        position: absolute;
+      }
+
+      .offer-puzzle:first-of-type {
+        top: 75px;
+        right: -24px;
+        transform: rotate(270deg);
+      }
+
+      .offer-puzzle:last-of-type {
+        bottom: 0;
+        left: 100px;
+      }
+    }
+
+    & > div:last-of-type {
+      width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      & > ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          width: 283px;
+          font-weight: 800;
+          font-size: 47px;
+          line-height: 120%;
+          letter-spacing: 0%;
+
+          div {
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+              display: flex;
+              gap: 14px;
+              color: #00adeb;
+              font-size: 47px;
+
+              span {
+                font-weight: 700;
+                font-size: 23px;
+                line-height: 120%;
+                letter-spacing: 0%;
+              }
+            }
+
+            img {
+              width: 64px;
+              height: 64px;
+            }
+          }
+
+          p {
+            font-family: Gilroy;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 140%;
+            letter-spacing: 6%;
+            text-transform: uppercase;
+          }
+        }
+
+        li:nth-of-type(1),
+        li:nth-of-type(2) {
+          height: 82px;
+          margin-bottom: 55px;
+        }
+
+        li:nth-of-type(3) {
+          position: relative;
+
+          div {
+            h3 {
+              z-index: 2;
+            }
+
+            img {
+              position: absolute;
+              right: 0;
+            }
+          }
+
+          p {
+            span {
+              font-weight: 400;
+              font-style: Regular;
+              font-size: 17px;
+              line-height: 140%;
+              letter-spacing: 0%;
+              vertical-align: bottom;
+              color: #212529cc;
+            }
+          }
+        }
+      }
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          li {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            width: 283px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: #212529cc;
+
+            img {
+              width: 8px;
+              height: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1439px) {
+  h2 {
+    font-size: 45px;
+  }
+
   header {
     height: 75px;
     padding-inline: 15px;
@@ -251,19 +438,24 @@ main {
       width: auto;
     }
 
-    & > div:first-of-type,
-    div:last-of-type {
+    .header-top-desktop,
+    .header-bottom-desktop {
       display: none;
     }
 
-    & > a,
-    button {
-      display: block;
+    .header-mobile {
+      display: flex;
+      justify-content: space-between;
+      width: 770px;
+      margin-inline: auto;
+      padding-inline: 16px;
     }
   }
 
   main {
     margin-top: 145px;
+    margin-inline: auto;
+    width: 770px;
 
     .foamiran-wholesale-supplies {
       flex-direction: column;
@@ -297,9 +489,58 @@ main {
       }
 
       picture {
+        width: 690px;
+        height: 376px;
+
         img {
           width: 690px;
           height: 376px;
+        }
+      }
+    }
+
+    .offer {
+      flex-direction: column-reverse;
+
+      & > div:first-of-type {
+        picture {
+          width: 770px;
+          height: 600px;
+
+          img {
+            width: 770px;
+            height: 600px;
+          }
+        }
+
+        .offer-puzzle:first-of-type {
+          top: 24px;
+          right: 18px;
+        }
+
+        .offer-puzzle:last-of-type {
+          bottom: 0;
+          left: 192px;
+        }
+      }
+
+      & > div:last-of-type {
+        padding-block: 65px;
+
+        width: 690px;
+
+        ul {
+          li {
+            width: 335px;
+          }
+        }
+
+        div {
+          ul {
+            li {
+              width: 335px;
+            }
+          }
         }
       }
     }
@@ -307,8 +548,25 @@ main {
 }
 
 @media (max-width: 771px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+
+  header {
+    .header-mobile {
+      width: 375px;
+      padding-inline: var(--mobile-global-padding-inline);
+    }
+  }
+
   main {
     margin-top: 125px;
+    width: 375px;
+    margin-inline: auto;
 
     .foamiran-wholesale-supplies {
       padding-inline: var(--mobile-global-padding-inline);
@@ -353,9 +611,69 @@ main {
       }
 
       picture {
+        width: 335px;
+        height: 280px;
         img {
           width: 335px;
           height: 280px;
+        }
+      }
+    }
+
+    .offer {
+      & > div:first-of-type {
+        picture {
+          width: 375px;
+          height: 292px;
+
+          img {
+            width: 375px;
+            height: 292px;
+          }
+        }
+
+        .offer-puzzle {
+          width: 65px;
+          height: 100px;
+        }
+
+        .offer-puzzle:first-of-type {
+          top: -18px;
+          right: -12px;
+        }
+
+        .offer-puzzle:last-of-type {
+          bottom: -26px;
+          left: 0px;
+        }
+      }
+
+      & > div:last-of-type {
+        width: 335px;
+        gap: 30px;
+        flex-direction: column;
+        padding-block: 45px;
+
+        ul {
+          li {
+            position: relative;
+
+            div {
+              h3 {
+                font-size: 30px;
+              }
+
+              img {
+                position: absolute;
+                right: 0;
+              }
+            }
+          }
+
+          li:nth-of-type(1),
+          li:nth-of-type(2) {
+            margin: 0;
+          }
         }
       }
     }

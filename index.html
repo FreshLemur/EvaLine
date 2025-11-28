@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="header-top-desktop">
         <div>
           <p>
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@
           <li>RO</li>
         </ul>
       </div>
-      <div>
+      <div class="header-bottom-desktop">
         <a href="/"><img class="logo" src="/assets/logo.png" alt="Logo" /></a>
         <nav>
           <ul>
@@ -95,18 +95,20 @@
           +38 (067) 156 14 96
         </button>
       </div>
-      <a href="/"><img class="logo" src="/assets/logo.png" alt="Logo" /></a>
-      <button>
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <path d="M4 18L20 18" stroke="#5A5A5A" stroke-width="2" stroke-linecap="round"></path>
-            <path d="M4 12L20 12" stroke="#5A5A5A" stroke-width="2" stroke-linecap="round"></path>
-            <path d="M4 6L20 6" stroke="#5A5A5A" stroke-width="2" stroke-linecap="round"></path>
-          </g>
-        </svg>
-      </button>
+      <div class="header-mobile">
+        <a href="/"><img class="logo" src="/assets/logo.png" alt="Logo" /></a>
+        <button>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M4 18L20 18" stroke="#5A5A5A" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M4 12L20 12" stroke="#5A5A5A" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M4 6L20 6" stroke="#5A5A5A" stroke-width="2" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <section class="foamiran-wholesale-supplies">
@@ -134,6 +136,72 @@
           <img fetchpriority="high" src="/assets/images/foamirian-desktop.webp" />
         </picture>
       </section>
+      <div class="offer">
+        <div>
+          <picture>
+            <source srcset="/assets/images/offer-mobile.webp" media="(max-width: 771px)" />
+            <source srcset="/assets/images/offer-tablet.webp" media="(max-width: 1439px)" />
+            <img src="/assets/images/offer-desktop.webp" />
+          </picture>
+          <img class="offer-puzzle" src="/assets/svg/puzzle.svg" />
+          <img class="offer-puzzle" src="/assets/svg/puzzle.svg" />
+        </div>
+        <div>
+          <h2>EvaLine offers EVA foam sheets</h2>
+          <ul>
+            <li>
+              <div>
+                <h3>
+                  100
+                  <span>kg/m3</span>
+                </h3>
+                <img src="/assets/svg/offer-density.svg" />
+              </div>
+              <p>Density</p>
+            </li>
+            <li>
+              <div>
+                <h3>
+                  40+
+                  <span>options</span>
+                </h3>
+                <img src="/assets/svg/offer-colors.svg" />
+              </div>
+              <p>Colors</p>
+            </li>
+
+            <li>
+              <div>
+                <h3>2.5 × 1.45 <span>m</span></h3>
+                <img src="/assets/svg/offer-sheet-size.svg" />
+              </div>
+              <p>
+                Sheet size <br />
+                <span>Custom cutting available</span>
+              </p>
+            </li>
+            <li>
+              <div>
+                <h3>
+                  1–32
+                  <span>mm</span>
+                </h3>
+                <img src="/assets/svg/offer-thickness.svg" />
+              </div>
+              <p>Thickness</p>
+            </li>
+          </ul>
+          <div>
+            <h3>Material properties:</h3>
+            <ul>
+              <li><img src="/assets/svg/blue-circle.svg" />Flexible and elastic</li>
+              <li><img src="/assets/svg/blue-circle.svg" />Easy to cut</li>
+              <li><img src="/assets/svg/blue-circle.svg" />Can be glued</li>
+              <li><img src="/assets/svg/blue-circle.svg" />Easily molded and shaped</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="/script.js" />
   </body>
