@@ -96,7 +96,6 @@
         </button>
       </div>
       <a href="/"><img class="logo" src="/assets/logo.png" alt="Logo" /></a>
-      top: 0;
       <button>
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -111,17 +110,29 @@
     </header>
     <main>
       <section class="foamiran-wholesale-supplies">
-        <div>
-          <h1><span>Foamiran</span> — Wholesale Supplies</h1>
-          <h2>Directly from the Manufacturer</h2>
+        <div class="foamiran-wholesale-supplies-wrapper">
+          <div>
+            <div>
+              <h1><span>Foamiran</span> — Wholesale Supplies</h1>
+              <h2>Directly from the Manufacturer</h2>
+            </div>
+            <ul>
+              <li><img src="/assets/svg/wholeSaleSvg1.svg" /> Wholesale prices starting from 100 sheets</li>
+              <li><img src="/assets/svg/wholeSaleSvg2.svg" />Size, color, and thickness — by customer</li>
+              <li><img src="/assets/svg/wholeSaleSvg3.svg" />Fast shipping from Bratislava</li>
+            </ul>
+          </div>
+          <form>
+            <input placeholder="Phone" type="text" />
+            <input placeholder="Email" type="text" />
+            <button>Leave a request <img src="/assets/svg/arrow-right.svg" /></button>
+          </form>
         </div>
-        <div>
-          <ul>
-            <li>Wholesale prices starting from 100 sheets</li>
-            <li>Size, color, and thickness — by customer</li>
-            <li>Fast shipping from Bratislava</li>
-          </ul>
-        </div>
+        <picture>
+          <source srcset="/assets/images/foamirian-mobile.webp" media="(max-width: 771px)" />
+          <source srcset="/assets/images/foamirian-tablet.webp" media="(max-width: 1439px)" />
+          <img fetchpriority="high" src="/assets/images/foamirian-desktop.webp" />
+        </picture>
       </section>
     </main>
     <script src="/script.js" />

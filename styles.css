@@ -17,6 +17,12 @@ body {
   margin: 0;
 }
 
+input {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
@@ -56,7 +62,7 @@ h3 {
 header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 1440px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -136,39 +142,164 @@ main {
   margin-top: 244px;
 
   .foamiran-wholesale-supplies {
-    div:nth-of-type(1) {
-      h1 {
-        font-weight: 900;
-        font-size: 57px;
-        line-height: 110.00000000000001%;
-        letter-spacing: -1%;
-        text-transform: uppercase;
+    display: flex;
+    gap: 35px;
+    padding-inline: var(--desktop-global-padding-inline);
 
-        span {
-          color: var(--color-lime);
+    .foamiran-wholesale-supplies-wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 479px;
+      justify-content: space-between;
+
+      & > div {
+        width: 707px;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+
+        div {
+          h1 {
+            font-weight: 900;
+            font-size: 57px;
+            line-height: 110.00000000000001%;
+            letter-spacing: -1%;
+            text-transform: uppercase;
+
+            span {
+              color: var(--color-lime);
+            }
+          }
+
+          h2 {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 110.00000000000001%;
+            letter-spacing: 0%;
+            width: 90%;
+          }
+        }
+        ul {
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            display: flex;
+            gap: 14px;
+            color: #212529cc;
+
+            img {
+              width: 38.414451599121094px;
+              height: 39.33334732055664px;
+            }
+          }
         }
       }
 
-      h2 {
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 110.00000000000001%;
-        letter-spacing: 0%;
+      form {
+        display: flex;
+        gap: 9px;
+
+        input {
+          width: 217px;
+          height: 56px;
+          background-color: #eaf4f9;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 150%;
+          letter-spacing: 0%;
+          color: #21252999;
+          padding-left: 21px;
+        }
+
+        button {
+          width: 208px;
+          height: 56px;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 120%;
+          letter-spacing: 0%;
+          color: var(--color-white);
+          background-color: var(--color-lime);
+        }
+      }
+    }
+
+    picture {
+      img {
+        width: 495px;
+        height: 479px;
       }
     }
   }
 }
 
 @media (max-width: 1439px) {
+  header {
+    height: 75px;
+    padding-inline: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+      height: 22px;
+      width: auto;
+    }
+
+    & > div:first-of-type,
+    div:last-of-type {
+      display: none;
+    }
+
+    & > a,
+    button {
+      display: block;
+    }
+  }
+
   main {
+    margin-top: 145px;
+
     .foamiran-wholesale-supplies {
-      div:nth-of-type(1) {
-        h1 {
-          font-size: 50px;
+      flex-direction: column;
+      gap: 40px;
+      padding-inline: var(--tablet-global-padding-inline);
+
+      .foamiran-wholesale-supplies-wrapper {
+        height: 400px;
+        width: 690px;
+
+        & > div {
+          width: 690px;
+
+          div {
+            h1 {
+              font-size: 50px;
+            }
+
+            h2 {
+              font-size: 45px;
+              width: 100%;
+            }
+          }
         }
 
-        h2 {
-          font-size: 45px;
+        form {
+          input {
+            width: 232px;
+          }
+        }
+      }
+
+      picture {
+        img {
+          width: 690px;
+          height: 376px;
         }
       }
     }
@@ -176,37 +307,55 @@ main {
 }
 
 @media (max-width: 771px) {
-  header {
-    padding-inline: 15px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 75px;
-
-    svg {
-      height: 22px;
-      width: auto;
-    }
-
-    & > a,
-    button {
-      display: block;
-    }
-
-    & > div:first-of-type,
-    div:last-of-type {
-      display: none;
-    }
-  }
-
   main {
+    margin-top: 125px;
+
     .foamiran-wholesale-supplies {
-      div:nth-of-type(1) {
-        h1 {
-          font-size: 40px;
+      padding-inline: var(--mobile-global-padding-inline);
+
+      .foamiran-wholesale-supplies-wrapper {
+        width: 335px;
+        height: fit-content;
+        gap: 40px;
+
+        & > div {
+          width: 335px;
+          gap: 30px;
+
+          div {
+            h1 {
+              font-size: 40px;
+            }
+            h2 {
+              font-size: 30px;
+            }
+          }
+
+          ul {
+            gap: 30px;
+            flex-direction: column;
+
+            li {
+              display: flex;
+              align-items: center;
+            }
+          }
         }
-        h2 {
-          font-size: 30px;
+
+        form {
+          flex-direction: column;
+
+          input,
+          button {
+            width: 335px;
+          }
+        }
+      }
+
+      picture {
+        img {
+          width: 335px;
+          height: 280px;
         }
       }
     }
