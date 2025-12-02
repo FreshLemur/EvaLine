@@ -96,6 +96,7 @@ header {
   height: 140px;
   background-color: #f5f9fb;
   padding-bottom: 5px;
+  z-index: 10;
 
   svg {
     width: 15px;
@@ -291,17 +292,18 @@ main {
         }
       }
 
-      .offer-puzzle {
+      & > svg,
+      & > img {
         position: absolute;
       }
 
-      .offer-puzzle:first-of-type {
+      svg {
         top: 75px;
         right: -24px;
         transform: rotate(270deg);
       }
 
-      .offer-puzzle:last-of-type {
+      & > img {
         bottom: 0;
         left: 100px;
       }
@@ -903,12 +905,12 @@ main {
           }
         }
 
-        .offer-puzzle:first-of-type {
-          top: 24px;
+        svg {
+          top: 23px;
           right: 18px;
         }
 
-        .offer-puzzle:last-of-type {
+        & > img {
           bottom: 0;
           left: 192px;
         }
@@ -1095,13 +1097,13 @@ main {
           height: 100px;
         }
 
-        .offer-puzzle:first-of-type {
+        svg {
           top: -18px;
           right: -12px;
         }
 
-        .offer-puzzle:last-of-type {
-          bottom: -26px;
+        & > img {
+          bottom: -30px;
           left: 0px;
         }
       }
