@@ -1012,6 +1012,79 @@ main {
       color: #212529;
     }
   }
+
+  .workflow {
+    width: 1440px;
+    height: 629px;
+    background-color: #f5f9fb;
+    padding: 90px var(--desktop-global-padding-inline);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    .workflow__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 23px;
+    }
+
+    .workflow__title-highlight {
+      color: var(--color-blue);
+    }
+
+    .workflow__underline {
+      width: 39px;
+      height: 3px;
+      background-color: var(--color-blue);
+    }
+    .workflow__subtitle {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #212529cc;
+    }
+
+    .workflow__steps-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 33px;
+    }
+
+    .workflow__step {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      position: relative;
+      width: 283px;
+      flex-wrap: wrap;
+    }
+
+    .workflow__step--margin-top {
+      margin-top: 25px;
+    }
+
+    .workflow__step--number {
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      color: var(--color-white);
+      position: absolute;
+      top: 6px;
+      left: 20px;
+    }
+
+    .workflow__text {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      color: #212529cc;
+    }
+  }
 }
 
 @media (max-width: 1439px) {
@@ -1292,6 +1365,24 @@ main {
 
       .cooperation-options__delivery-info {
         width: 335px;
+      }
+    }
+    .workflow {
+      gap: 30px;
+      width: 770px;
+      height: 840px;
+      padding: 70px var(--tablet-global-padding-inline);
+
+      .workflow__steps-container {
+        gap: 20px;
+      }
+
+      .workflow__step {
+        width: 335px;
+      }
+
+      .workflow__step--margin-top {
+        margin-top: 0px;
       }
     }
   }
@@ -1576,6 +1667,29 @@ main {
 
       .cooperation-options__option--finished--wrapper {
         gap: 20px;
+      }
+    }
+
+    .workflow {
+      width: 375px;
+      height: 803px;
+      padding: 50px var(--mobile-global-padding-inline);
+      gap: 35px;
+
+      .workflow__header {
+        gap: 15px;
+      }
+
+      .workflow__steps-container {
+        flex-direction: column;
+      }
+
+      .workflow__text {
+        width: 264px;
+      }
+
+      .workflow__step--arrow {
+        display: none;
       }
     }
   }
