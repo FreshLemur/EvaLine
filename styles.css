@@ -1138,6 +1138,130 @@ main {
       color: #212529cc;
     }
   }
+
+  .working {
+    padding-inline: var(--desktop-global-padding-inline);
+    display: flex;
+    gap: 35px;
+
+    .working__content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 707px;
+    }
+
+    .working__content-header {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+    }
+
+    .working__title-highlight {
+      color: var(--color-blue);
+    }
+
+    .working__divider {
+      width: 39px;
+      height: 3px;
+      background-color: var(--color-blue);
+    }
+
+    .working__features-list {
+      display: flex;
+      gap: 35px;
+      flex-wrap: wrap;
+    }
+
+    .working__feature-item {
+      width: 283px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .working__feature-icon {
+      height: 40px;
+      width: 40px;
+    }
+
+    .working__feature-text {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      color: #212529;
+    }
+
+    .working__form-pillar {
+      width: 495px;
+      height: 475px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px;
+      position: relative;
+      background: linear-gradient(162deg, #ff6f00 27%, #7cb342 0%);
+    }
+
+    .working__form-puzzle {
+      height: 66px;
+      width: 101px;
+      position: absolute;
+    }
+
+    .working__form-puzzle-1 {
+      transform: rotate(270deg) scaleY(-1);
+      top: 16px;
+      left: -18px;
+    }
+    .working__form-puzzle-2 {
+      top: 35px;
+      right: -1px;
+    }
+    .working__form-icon {
+      height: 76px;
+      width: 76px;
+    }
+    .working__form-text--white {
+      color: var(--color-white);
+    }
+
+    .working__form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .working__form-input {
+      width: 431px;
+      height: 50px;
+      background-color: #ffffff;
+      padding-left: 21px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+    .working__form-button {
+      width: 431px;
+      height: 56px;
+      background-color: var(--color-blue);
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: 0%;
+      color: var(--color-white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .working-form__button--arrow {
+      width: 13px;
+      height: 11px;
+    }
+  }
 }
 
 @media (max-width: 1439px) {
@@ -1442,6 +1566,42 @@ main {
 
       .workflow__step--margin-top {
         margin-top: 0px;
+      }
+    }
+
+    .working {
+      flex-direction: column;
+      gap: 30px;
+      padding-inline: var(--tablet-global-padding-inline);
+
+      .working__content {
+        width: 690px;
+      }
+
+      .working__features-list {
+        gap: 20px;
+      }
+
+      .working__feature-item {
+        width: 335px;
+      }
+
+      .working__form-pillar {
+        width: 690px;
+        height: 347px;
+      }
+
+      .working__form {
+        flex-direction: row;
+      }
+
+      .working__form-input {
+        width: 195px;
+        height: 56px;
+      }
+
+      .working__form-button {
+        width: 206px;
       }
     }
   }
@@ -1749,6 +1909,45 @@ main {
 
       .workflow__step--arrow {
         display: none;
+      }
+    }
+
+    .working {
+      padding-inline: var(--mobile-global-padding-inline);
+
+      .working__content {
+        width: 335px;
+      }
+
+      .working__content-header {
+        gap: 15px;
+      }
+
+      .working__features-list {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .working__form-pillar {
+        width: 335px;
+        height: 518px;
+        padding: 60px 20px;
+      }
+      .working__form-icon {
+        height: 60px;
+        width: 60px;
+      }
+      .working__form {
+        flex-direction: column;
+      }
+
+      .working__form-input {
+        width: 294px;
+        height: 50px;
+      }
+
+      .working__form-button {
+        width: 294px;
       }
     }
   }
