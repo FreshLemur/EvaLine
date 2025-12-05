@@ -1109,6 +1109,12 @@ main {
       flex-wrap: wrap;
     }
 
+    .workflow__step--1 .workflow__step--number,
+    .workflow__step--2 .workflow__step--number,
+    .workflow__step--3 .workflow__step--number {
+      top: 12px;
+    }
+
     .workflow__step--margin-top {
       margin-top: 25px;
     }
@@ -1426,6 +1432,12 @@ main {
 
       .workflow__step {
         width: 335px;
+      }
+
+      .workflow__step--1 .workflow__step--number,
+      .workflow__step--2 .workflow__step--number,
+      .workflow__step--3 .workflow__step--number {
+        top: 6px;
       }
 
       .workflow__step--margin-top {
