@@ -1362,11 +1362,25 @@ main {
   .footer__bottom--socials {
     display: flex;
     gap: 8px;
+    align-items: center;
+  }
+  .footer__social-link {
+    display: flex;
   }
 
-  .footer__social-link--image {
+  .facebook-icon {
     height: 25px;
     width: 25px;
+  }
+
+  .instagram-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .youtube-icon {
+    height: 30px;
+    width: 30px;
   }
 }
 
