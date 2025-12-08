@@ -1285,6 +1285,91 @@ main {
   }
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  .footer__top {
+    background-color: #f5f9fb;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px var(--desktop-global-padding-inline);
+  }
+
+  .footer__list--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer__item {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #212529cc;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  .footer__logo--item {
+    margin-top: 20px;
+  }
+
+  .footer__logo--image {
+    width: 150px;
+  }
+
+  .footer__list--offices-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 330px;
+  }
+
+  .footer__item--black-text {
+    color: var(--color-black);
+    word-break: break-all;
+  }
+
+  .footer__bottom {
+    background-color: #c9dce8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: var(--desktop-global-padding-inline);
+    height: 70px;
+    position: relative;
+  }
+
+  .footer__bottom--text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #212529cc;
+    position: absolute;
+    left: var(--desktop-global-padding-inline);
+  }
+
+  .footer__bottom--socials {
+    display: flex;
+    gap: 8px;
+  }
+
+  .footer__social-link--image {
+    height: 25px;
+    width: 25px;
+  }
+}
+
 @media (max-width: 1439px) {
   h2 {
     font-size: 45px;
@@ -1661,6 +1746,30 @@ main {
       }
     }
   }
+
+  .footer {
+    .footer__top {
+      padding: 40px 10px;
+    }
+
+    .footer__list--business-wrapper {
+      width: 200px;
+    }
+
+    .footer__list--offices-wrapper {
+      width: 200px;
+    }
+
+    .footer__bottom {
+      padding-inline: 10px;
+      height: 140px;
+    }
+
+    .footer__bottom--text {
+      left: 10px;
+      width: 300px;
+    }
+  }
 }
 
 @media (max-width: 771px) {
@@ -2030,6 +2139,33 @@ main {
         width: 335px;
         height: 133px;
       }
+    }
+  }
+
+  .footer {
+    .footer__top {
+      flex-direction: column;
+      align-items: start;
+      padding: 40px 10px;
+      gap: 30px;
+    }
+
+    .footer__list--wrapper {
+      gap: 16px;
+    }
+
+    .footer__list--business-wrapper,
+    .footer__list--offices-wrapper {
+      width: auto;
+    }
+
+    .footer__bottom {
+      flex-direction: column;
+    }
+
+    .footer__bottom--text {
+      width: auto;
+      position: static;
     }
   }
 }
