@@ -747,36 +747,36 @@ main {
     }
 
     .benefit-item__gift-shops {
-      background-image: url(/assets/images/benefit-item__gift-shops.webp);
+      background-image: url(./assets/images/benefit-item__gift-shops.webp);
     }
 
     .benefit-item__handmade-stores {
-      background-image: url(/assets/images/benefit-item__handmade-stores.webp);
+      background-image: url(./assets/images/benefit-item__handmade-stores.webp);
     }
     .benefit-item__game-toy-manufacturers {
-      background-image: url(/assets/images/benefit-item__game-toy-manufacturers.webp);
+      background-image: url(./assets/images/benefit-item__game-toy-manufacturers.webp);
       grid-area: 2 / 1 / 4 / 2;
     }
     .benefit-item__footwear-manufacturers {
-      background-image: url(/assets/images/benefit-item__footwear-manufacturers.webp);
+      background-image: url(./assets/images/benefit-item__footwear-manufacturers.webp);
     }
     .benefit-item__model-making-studios {
-      background-image: url(/assets/images/benefit-item__model-making-studios.webp);
+      background-image: url(./assets/images/benefit-item__model-making-studios.webp);
     }
     .benefit-item__florists {
-      background-image: url(/assets/images/benefit-item__florists.webp);
+      background-image: url(./assets/images/benefit-item__florists.webp);
       grid-area: 1 / 3 / 2 / 5;
     }
     .benefit-item__designers {
-      background-image: url(/assets/images/benefit-item__designers.webp);
+      background-image: url(./assets/images/benefit-item__designers.webp);
       grid-area: 2 / 3 / 3 / 4;
     }
     .benefit-item__children {
-      background-image: url(/assets/images/benefit-item__children.webp);
+      background-image: url(./assets/images/benefit-item__children.webp);
       grid-area: 2 / 4 / 3 / 5;
     }
     .benefit-item__crafters {
-      background-image: url(/assets/images/benefit-item__crafters.webp);
+      background-image: url(./assets/images/benefit-item__crafters.webp);
     }
 
     .benefit-item .benefit-item__text {
