@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="header-top-desktop">
-        <div>
-          <p>
+    <header class="header">
+      <div class="header__top-bar--desktop">
+        <div class="header__contact-info">
+          <p class="header__contact-info--time">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -26,7 +26,7 @@
             </svg>
             MND-FRI: 9:00 - 19:00 / SAT - SUN: Weekends
           </p>
-          <a>
+          <a class="header__item--email">
             <svg
               viewBox="0 -3.5 32 32"
               version="1.1"
@@ -60,28 +60,28 @@
             evaline.com.ua@gmail.com
           </a>
         </div>
-        <ul>
-          <li>UA</li>
-          <li>RU</li>
-          <li>PL</li>
-          <li>EN</li>
-          <li>DE</li>
-          <li>RO</li>
+        <ul class="header__language-list">
+          <li class="header__language-item">UA</li>
+          <li class="header__language-item">RU</li>
+          <li class="header__language-item">PL</li>
+          <li class="header__language-item">EN</li>
+          <li class="header__language-item">DE</li>
+          <li class="header__language-item">RO</li>
         </ul>
       </div>
-      <div class="header-bottom-desktop">
-        <a href="/"><img class="logo" src="./assets/logo.png" alt="Logo" /></a>
-        <nav>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Home Products</a></li>
-            <li><a href="">Business Products</a></li>
-            <li><a href="">Shop</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Contacts</a></li>
+      <div class="header__main-content--desktop">
+        <a class="header__logo-link" href="/"><img class="logo" src="./assets/logo.png" alt="Logo" /></a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item"><a class="header__menu-item" href="">About</a></li>
+            <li class="header__menu-item"><a class="header__menu-item" href="">Home Products</a></li>
+            <li class="header__menu-item"><a class="header__menu-item" href="">Business Products</a></li>
+            <li class="header__menu-item"><a class="header__menu-item" href="">Shop</a></li>
+            <li class="header__menu-item"><a class="header__menu-item" href="">News</a></li>
+            <li class="header__menu-item"><a class="header__menu-item" href="">Contacts</a></li>
           </ul>
         </nav>
-        <button>
+        <button class="header__cta-button">
           <svg fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -95,9 +95,9 @@
           +38 (067) 156 14 96
         </button>
       </div>
-      <div class="header-mobile">
-        <a href="/"><img class="logo" src="./assets/logo.png" alt="Logo" /></a>
-        <button>
+      <div class="header__mobile">
+        <a class="header__logo-link" href="/"><img class="logo" src="./assets/logo.png" alt="Logo" /></a>
+        <button class="header__menu-toggle-button">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -112,40 +112,58 @@
     </header>
     <main>
       <section class="foamiran-wholesale-supplies">
-        <div class="foamiran-wholesale-supplies-wrapper">
-          <div>
-            <div>
-              <h1><span>Foamiran</span> — Wholesale Supplies</h1>
-              <h2>Directly from the Manufacturer</h2>
+        <div class="foamiran-wholesale-supplies__wrapper">
+          <div class="foamiran-wholesale-supplies__content">
+            <div class="foamiran-wholesale-supplies__header">
+              <h1 class="foamiran-wholesale-supplies__title">
+                <span class="foamiran-wholesale-supplies__title--green">Foamiran</span> — Wholesale Supplies
+              </h1>
+              <h2 class="foamiran-wholesale-supplies__subtitle">Directly from the Manufacturer</h2>
             </div>
-            <ul>
-              <li><img src="./assets/svg/wholeSaleSvg1.svg" /> Wholesale prices starting from 100 sheets</li>
-              <li><img src="./assets/svg/wholeSaleSvg2.svg" />Size, color, and thickness — by customer</li>
-              <li><img src="./assets/svg/wholeSaleSvg3.svg" />Fast shipping from Bratislava</li>
+            <ul class="foamiran-wholesale-supplies__features-list">
+              <li class="foamiran-wholesale-supplies__feature-item">
+                <img class="foamiran-wholesale-supplies__feature-icon" src="./assets/svg/wholeSaleSvg1.svg" /> Wholesale
+                prices starting from 100 sheets
+              </li>
+              <li class="foamiran-wholesale-supplies__feature-item">
+                <img class="foamiran-wholesale-supplies__feature-icon" src="./assets/svg/wholeSaleSvg2.svg" />Size,
+                color, and thickness — by customer
+              </li>
+              <li class="foamiran-wholesale-supplies__feature-item">
+                <img class="foamiran-wholesale-supplies__feature-icon" src="./assets/svg/wholeSaleSvg3.svg" />Fast
+                shipping from Bratislava
+              </li>
             </ul>
           </div>
-          <form>
-            <input placeholder="Phone" type="text" />
-            <input placeholder="Email" type="text" />
-            <button>Leave a request <img src="./assets/svg/arrow-right.svg" /></button>
+          <form class="foamiran-wholesale-supplies__form">
+            <input class="foamiran-wholesale-supplies__input" placeholder="Phone" type="text" />
+            <input class="foamiran-wholesale-supplies__input" placeholder="Email" type="text" />
+            <button class="foamiran-wholesale-supplies__button">
+              Leave a request
+              <img class="foamiran-wholesale-supplies__button-icon" src="./assets/svg/arrow-right.svg" />
+            </button>
           </form>
         </div>
-        <picture>
+        <picture class="foamiran-wholesale-supplies__picture">
           <source srcset="/assets/images/foamirian-mobile.webp" media="(max-width: 771px)" />
           <source srcset="/assets/images/foamirian-tablet.webp" media="(max-width: 1439px)" />
-          <img fetchpriority="high" src="./assets/images/foamirian-desktop.webp" />
+          <img
+            class="foamiran-wholesale-supplies__image"
+            fetchpriority="high"
+            src="./assets/images/foamirian-desktop.webp"
+          />
         </picture>
       </section>
       <div class="offer">
-        <div>
-          <picture>
+        <div class="offer__media-wrapper">
+          <picture class="offer__picture">
             <source srcset="/assets/images/offer-mobile.webp" media="(max-width: 771px)" />
             <source srcset="/assets/images/offer-tablet.webp" media="(max-width: 1439px)" />
-            <img src="./assets/images/offer-desktop.webp" />
+            <img class="offer__image" src="./assets/images/offer-desktop.webp" />
           </picture>
 
           <svg
-            class="offer-puzzle"
+            class="offer-puzzle offer__puzzle--top-right"
             width="140"
             height="92"
             viewBox="0 0 140 92"
@@ -158,60 +176,68 @@
             />
           </svg>
 
-          <img class="offer-puzzle" src="./assets/svg/puzzle.svg" />
+          <img class="offer-puzzle offer__puzzle--bottom-left" src="./assets/svg/puzzle.svg" />
         </div>
-        <div>
-          <h2>EvaLine offers EVA foam sheets</h2>
-          <ul>
-            <li>
-              <div>
-                <h3>
+        <div class="offer__content">
+          <h2 class="offer__title">EvaLine offers EVA foam sheets</h2>
+          <ul class="specs">
+            <li class="specs__item specs__item--1">
+              <div class="specs__value-group">
+                <h3 class="specs__value">
                   100
-                  <span>kg/m3</span>
+                  <span class="specs__unit">kg/m3</span>
                 </h3>
-                <img src="./assets/svg/offer-density.svg" />
+                <img class="specs__icon" src="./assets/svg/offer-density.svg" />
               </div>
-              <p>Density</p>
+              <p class="specs__label">Density</p>
             </li>
-            <li>
-              <div>
-                <h3>
+            <li class="specs__item specs__item--2">
+              <div class="specs__value-group">
+                <h3 class="specs__value">
                   40+
-                  <span>options</span>
+                  <span class="specs__unit">options</span>
                 </h3>
-                <img src="./assets/svg/offer-colors.svg" />
+                <img class="specs__icon" src="./assets/svg/offer-colors.svg" />
               </div>
-              <p>Colors</p>
+              <p class="specs__label">Colors</p>
             </li>
 
-            <li>
-              <div>
-                <h3>2.5 × 1.45 <span>m</span></h3>
-                <img src="./assets/svg/offer-sheet-size.svg" />
+            <li class="specs__item specs__item--3">
+              <div class="specs__value-group">
+                <h3 class="specs__value">2.5 × 1.45 <span class="specs__unit">m</span></h3>
+                <img class="specs__icon" src="./assets/svg/offer-sheet-size.svg" />
               </div>
-              <p>
+              <p class="specs__label">
                 Sheet size <br />
-                <span>Custom cutting available</span>
+                <span class="specs__subtitle">Custom cutting available</span>
               </p>
             </li>
-            <li>
-              <div>
-                <h3>
+            <li class="specs__item">
+              <div class="specs__value-group">
+                <h3 class="specs__value">
                   1–32
-                  <span>mm</span>
+                  <span class="specs__unit">mm</span>
                 </h3>
-                <img src="./assets/svg/offer-thickness.svg" />
+                <img class="specs__icon" src="./assets/svg/offer-thickness.svg" />
               </div>
-              <p>Thickness</p>
+              <p class="specs__label">Thickness</p>
             </li>
           </ul>
-          <div>
-            <h3>Material properties:</h3>
-            <ul>
-              <li><img src="./assets/svg/blue-circle.svg" />Flexible and elastic</li>
-              <li><img src="./assets/svg/blue-circle.svg" />Easy to cut</li>
-              <li><img src="./assets/svg/blue-circle.svg" />Can be glued</li>
-              <li><img src="./assets/svg/blue-circle.svg" />Easily molded and shaped</li>
+          <div class="material-properties">
+            <h3 class="material-properties__title">Material properties:</h3>
+            <ul class="material-properties__list">
+              <li class="material-properties__item">
+                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" />Flexible and elastic
+              </li>
+              <li class="material-properties__item">
+                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" />Easy to cut
+              </li>
+              <li class="material-properties__item">
+                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" />Can be glued
+              </li>
+              <li class="material-properties__item">
+                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" />Easily molded and shaped
+              </li>
             </ul>
           </div>
         </div>

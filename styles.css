@@ -133,7 +133,7 @@ hr {
   width: 120px;
 }
 
-header {
+.header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -149,74 +149,73 @@ header {
     width: 15px;
   }
 
-  .header-top-desktop,
-  .header-bottom-desktop {
+  .header__top-bar--desktop,
+  .header__main-content--desktop {
     margin-inline: auto;
     width: 1440px;
   }
 
-  .header-top-desktop {
+  .header__top-bar--desktop {
     padding-inline: var(--desktop-global-padding-inline);
     display: flex;
     justify-content: space-between;
     background-color: #f5f9fb;
     color: #212529;
     height: 60px;
-
-    div {
-      display: flex;
-      align-items: center;
-      gap: 90px;
-
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3px;
-      }
-    }
-
-    ul {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-    }
   }
 
-  .header-bottom-desktop {
+  .header__contact-info {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+  }
+
+  .header__item--email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .header__language-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .header__main-content--desktop {
     padding-inline: var(--desktop-global-padding-inline);
     display: flex;
     justify-content: space-between;
     height: 60px;
-
-    nav {
-      color: var(--color-black);
-
-      ul {
-        display: flex;
-        gap: 24px;
-      }
-    }
     align-items: center;
-
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 224px;
-      height: 40px;
-      border: none;
-      background-color: var(--color-lime);
-      color: var(--color-white);
-
-      svg {
-        margin-bottom: -2px;
-      }
-    }
   }
 
-  .header-mobile {
+  .header__nav {
+    color: var(--color-black);
+  }
+  .header__menu {
+    display: flex;
+    gap: 24px;
+  }
+
+  .header__mobile {
     display: none;
+  }
+
+  .header__cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 224px;
+    height: 40px;
+    border: none;
+    background-color: var(--color-lime);
+    color: var(--color-white);
+
+    svg {
+      margin-bottom: -2px;
+    }
   }
 }
 
@@ -234,92 +233,87 @@ main {
     gap: 35px;
     padding-inline: var(--desktop-global-padding-inline);
 
-    .foamiran-wholesale-supplies-wrapper {
+    .foamiran-wholesale-supplies__wrapper {
       display: flex;
       flex-direction: column;
       height: 479px;
       justify-content: space-between;
-
-      & > div {
-        width: 707px;
-        display: flex;
-        flex-direction: column;
-        gap: 45px;
-
-        div {
-          h1 {
-            font-weight: 900;
-            font-size: 57px;
-            line-height: 110.00000000000001%;
-            letter-spacing: -1%;
-            text-transform: uppercase;
-
-            span {
-              color: var(--color-lime);
-            }
-          }
-
-          h2 {
-            width: 90%;
-          }
-        }
-        ul {
-          display: flex;
-          justify-content: space-between;
-
-          li {
-            font-weight: 400;
-            font-size: 17px;
-            line-height: 150%;
-            letter-spacing: 0%;
-            display: flex;
-            gap: 14px;
-            color: #212529cc;
-
-            img {
-              width: 38.414451599121094px;
-              height: 39.33334732055664px;
-            }
-          }
-        }
-      }
-
-      form {
-        display: flex;
-        gap: 9px;
-
-        input {
-          width: 217px;
-          height: 56px;
-          background-color: #eaf4f9;
-          font-weight: 400;
-          font-size: 17px;
-          line-height: 150%;
-          letter-spacing: 0%;
-          color: #21252999;
-          padding-left: 21px;
-        }
-
-        button {
-          width: 208px;
-          height: 56px;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 120%;
-          letter-spacing: 0%;
-          color: var(--color-white);
-          background-color: var(--color-lime);
-        }
-      }
     }
 
-    picture {
+    .foamiran-wholesale-supplies__content {
+      width: 707px;
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+
+    .foamiran-wholesale-supplies__title {
+      font-weight: 900;
+      font-size: 57px;
+      line-height: 110.00000000000001%;
+      letter-spacing: -1%;
+      text-transform: uppercase;
+    }
+
+    .foamiran-wholesale-supplies__title--green {
+      color: var(--color-lime);
+    }
+    .foamiran-wholesale-supplies__subtitle {
+      width: 90%;
+    }
+
+    .foamiran-wholesale-supplies__features-list {
+      display: flex;
+      justify-content: space-between;
+    }
+    .foamiran-wholesale-supplies__feature-item {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      display: flex;
+      gap: 14px;
+      color: #212529cc;
+    }
+    .foamiran-wholesale-supplies__feature-icon {
+      width: 38.414451599121094px;
+      height: 39.33334732055664px;
+    }
+
+    .foamiran-wholesale-supplies__form {
+      display: flex;
+      gap: 9px;
+    }
+    .foamiran-wholesale-supplies__input {
+      width: 217px;
+      height: 56px;
+      background-color: #eaf4f9;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      color: #21252999;
+      padding-left: 21px;
+    }
+
+    .foamiran-wholesale-supplies__button {
+      width: 208px;
+      height: 56px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      color: var(--color-white);
+      background-color: var(--color-lime);
+    }
+
+    .foamiran-wholesale-supplies__picture {
       width: 495px;
       height: 479px;
-      img {
-        width: 495px;
-        height: 479px;
-      }
+    }
+    .foamiran-wholesale-supplies__image {
+      width: 495px;
+      height: 479px;
     }
   }
 
@@ -327,153 +321,145 @@ main {
     display: flex;
     background-color: #fff4d6;
 
-    & > div:first-of-type {
+    .offer__media-wrapper {
       position: relative;
-
-      picture {
-        width: 667px;
-        height: 724px;
-        img {
-          width: 667px;
-          height: 724px;
-        }
-      }
-
-      & > svg,
-      & > img {
-        position: absolute;
-      }
-
-      svg {
-        top: 75px;
-        right: -24px;
-        transform: rotate(270deg);
-      }
-
-      & > img {
-        bottom: 0;
-        left: 100px;
-      }
     }
 
-    & > div:last-of-type {
+    .offer__picture {
+      width: 667px;
+      height: 724px;
+    }
+    .offer__image {
+      width: 667px;
+      height: 724px;
+    }
+    .offer-puzzle {
+      position: absolute;
+    }
+
+    .offer__puzzle--top-right {
+      top: 75px;
+      right: -24px;
+      transform: rotate(270deg);
+    }
+
+    .offer__puzzle--bottom-left {
+      bottom: 0;
+      left: 100px;
+    }
+
+    .offer__content {
       width: 600px;
       margin: auto;
       display: flex;
       flex-direction: column;
       gap: 40px;
+    }
 
-      & > ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .specs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-        li {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-          width: 283px;
-          font-weight: 800;
-          font-size: 47px;
-          line-height: 120%;
-          letter-spacing: 0%;
+    .specs__item {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 283px;
+      font-weight: 800;
+      font-size: 47px;
+      line-height: 120%;
+      letter-spacing: 0%;
+    }
 
-          div {
-            display: flex;
-            justify-content: space-between;
+    .specs__value-group {
+      display: flex;
+      justify-content: space-between;
+    }
 
-            h3 {
-              display: flex;
-              gap: 14px;
-              color: #00adeb;
-              font-size: 47px;
+    .specs__value {
+      display: flex;
+      gap: 14px;
+      color: #00adeb;
+      font-size: 47px;
+    }
+    .specs__unit {
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 120%;
+      letter-spacing: 0%;
+    }
 
-              span {
-                font-weight: 700;
-                font-size: 23px;
-                line-height: 120%;
-                letter-spacing: 0%;
-              }
-            }
+    .specs__icon {
+      width: 64px;
+      height: 64px;
+    }
 
-            img {
-              width: 64px;
-              height: 64px;
-            }
-          }
+    .specs__label {
+      font-family: Gilroy;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: 6%;
+      text-transform: uppercase;
+    }
 
-          p {
-            font-family: Gilroy;
-            font-weight: 700;
-            font-size: 15px;
-            line-height: 140%;
-            letter-spacing: 6%;
-            text-transform: uppercase;
-          }
-        }
+    .specs__item--1,
+    .specs__item--2 {
+      height: 82px;
+      margin-bottom: 55px;
+    }
 
-        li:nth-of-type(1),
-        li:nth-of-type(2) {
-          height: 82px;
-          margin-bottom: 55px;
-        }
+    .specs__item--3 {
+      position: relative;
+    }
+    .specs__item--3 .specs__value {
+      z-index: 2;
+    }
 
-        li:nth-of-type(3) {
-          position: relative;
+    .specs__item--3 .specs__icon {
+      position: absolute;
+      right: 0;
+    }
 
-          div {
-            h3 {
-              z-index: 2;
-            }
+    .specs__item--3 .specs__subtitle {
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 17px;
+      line-height: 140%;
+      letter-spacing: 0%;
+      vertical-align: bottom;
+      color: #212529cc;
+    }
 
-            img {
-              position: absolute;
-              right: 0;
-            }
-          }
+    .material-properties {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+    }
 
-          p {
-            span {
-              font-weight: 400;
-              font-style: Regular;
-              font-size: 17px;
-              line-height: 140%;
-              letter-spacing: 0%;
-              vertical-align: bottom;
-              color: #212529cc;
-            }
-          }
-        }
-      }
+    .material-properties__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-      & > div {
-        display: flex;
-        flex-direction: column;
-        gap: 23px;
+    .material-properties__item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 283px;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      color: #212529cc;
+    }
 
-        ul {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-
-          li {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            width: 283px;
-            font-weight: 400;
-            font-size: 17px;
-            line-height: 150%;
-            letter-spacing: 0%;
-            color: #212529cc;
-
-            img {
-              width: 8px;
-              height: 8px;
-            }
-          }
-        }
-      }
+    .material-properties__bullet {
+      width: 8px;
+      height: 8px;
     }
   }
 
@@ -1389,7 +1375,7 @@ main {
     font-size: 45px;
   }
 
-  header {
+  .header {
     height: 75px;
     padding-inline: 15px;
     flex-direction: row;
@@ -1401,12 +1387,12 @@ main {
       width: auto;
     }
 
-    .header-top-desktop,
-    .header-bottom-desktop {
+    .header__top-bar--desktop,
+    .header__main-content--desktop {
       display: none;
     }
 
-    .header-mobile {
+    .header__mobile {
       display: flex;
       justify-content: space-between;
       width: 770px;
@@ -1425,86 +1411,70 @@ main {
       gap: 40px;
       padding-inline: var(--tablet-global-padding-inline);
 
-      .foamiran-wholesale-supplies-wrapper {
+      .foamiran-wholesale-supplies__wrapper {
         height: 400px;
         width: 690px;
-
-        & > div {
-          width: 690px;
-
-          div {
-            h1 {
-              font-size: 50px;
-            }
-
-            h2 {
-              font-size: 45px;
-              width: 100%;
-            }
-          }
-        }
-
-        form {
-          input {
-            width: 232px;
-          }
-        }
       }
 
-      picture {
+      .foamiran-wholesale-supplies__content {
+        width: 690px;
+      }
+
+      .foamiran-wholesale-supplies__title {
+        font-size: 50px;
+      }
+
+      .foamiran-wholesale-supplies__subtitle {
+        font-size: 45px;
+        width: 100%;
+      }
+
+      .foamiran-wholesale-supplies__input {
+        width: 232px;
+      }
+
+      .foamiran-wholesale-supplies__picture {
         width: 690px;
         height: 376px;
-
-        img {
-          width: 690px;
-          height: 376px;
-        }
+      }
+      .foamiran-wholesale-supplies__image {
+        width: 690px;
+        height: 376px;
       }
     }
 
     .offer {
       flex-direction: column-reverse;
 
-      & > div:first-of-type {
-        picture {
-          width: 770px;
-          height: 600px;
-
-          img {
-            width: 770px;
-            height: 600px;
-          }
-        }
-
-        svg {
-          top: 23px;
-          right: 18px;
-        }
-
-        & > img {
-          bottom: 0;
-          left: 192px;
-        }
+      .offer__picture {
+        width: 770px;
+        height: 600px;
+      }
+      .offer__image {
+        width: 770px;
+        height: 600px;
       }
 
-      & > div:last-of-type {
+      .offer__puzzle--top-right {
+        top: 23px;
+        right: 18px;
+      }
+
+      .offer__puzzle--bottom-left {
+        bottom: 0;
+        left: 192px;
+      }
+
+      .offer__content {
         padding-block: 65px;
-
         width: 690px;
+      }
+      .specs__item {
+        width: 335px;
+      }
 
-        ul {
-          li {
-            width: 335px;
-          }
-        }
-
-        div {
-          ul {
-            li {
-              width: 335px;
-            }
-          }
-        }
+      .material-properties__item {
+        width: 335px;
       }
     }
 
@@ -1795,8 +1765,8 @@ main {
     font-size: 23px;
   }
 
-  header {
-    .header-mobile {
+  .header {
+    .header__mobile {
       width: 375px;
       padding-inline: var(--mobile-global-padding-inline);
     }
@@ -1810,110 +1780,102 @@ main {
     .foamiran-wholesale-supplies {
       padding-inline: var(--mobile-global-padding-inline);
 
-      .foamiran-wholesale-supplies-wrapper {
+      .foamiran-wholesale-supplies__wrapper {
         width: 335px;
         height: fit-content;
         gap: 40px;
-
-        & > div {
-          width: 335px;
-          gap: 30px;
-
-          div {
-            h1 {
-              font-size: 40px;
-            }
-            h2 {
-              font-size: 30px;
-            }
-          }
-
-          ul {
-            gap: 30px;
-            flex-direction: column;
-
-            li {
-              display: flex;
-              align-items: center;
-            }
-          }
-        }
-
-        form {
-          flex-direction: column;
-
-          input,
-          button {
-            width: 335px;
-          }
-        }
       }
 
-      picture {
+      .foamiran-wholesale-supplies__content {
+        width: 335px;
+        gap: 30px;
+      }
+
+      .foamiran-wholesale-supplies__content {
+        font-size: 40px;
+      }
+      .foamiran-wholesale-supplies__subtitle {
+        font-size: 30px;
+      }
+
+      .foamiran-wholesale-supplies__features-list {
+        gap: 30px;
+        flex-direction: column;
+      }
+      .foamiran-wholesale-supplies__feature-item {
+        display: flex;
+        align-items: center;
+      }
+
+      .foamiran-wholesale-supplies__form {
+        flex-direction: column;
+      }
+
+      .foamiran-wholesale-supplies__input,
+      .foamiran-wholesale-supplies__button {
+        width: 335px;
+      }
+
+      .foamiran-wholesale-supplies__picture {
         width: 335px;
         height: 280px;
-        img {
-          width: 335px;
-          height: 280px;
-        }
+      }
+
+      .foamiran-wholesale-supplies__image {
+        width: 335px;
+        height: 280px;
       }
     }
 
     .offer {
-      & > div:first-of-type {
-        picture {
-          width: 375px;
-          height: 292px;
-
-          img {
-            width: 375px;
-            height: 292px;
-          }
-        }
-
-        .offer-puzzle {
-          width: 65px;
-          height: 100px;
-        }
-
-        svg {
-          top: -18px;
-          right: -12px;
-        }
-
-        & > img {
-          bottom: -30px;
-          left: 0px;
-        }
+      .offer__picture {
+        width: 375px;
+        height: 292px;
       }
 
-      & > div:last-of-type {
+      .offer__image {
+        width: 375px;
+        height: 292px;
+      }
+
+      .offer-puzzle {
+        width: 65px;
+        height: 100px;
+      }
+
+      .offer__puzzle--top-right {
+        top: -18px;
+        right: -12px;
+      }
+
+      .offer__puzzle--bottom-left {
+        bottom: -30px;
+        left: 0px;
+      }
+
+      .offer__content {
         width: 335px;
         gap: 30px;
         flex-direction: column;
         padding-block: 45px;
+      }
 
-        ul {
-          li {
-            position: relative;
+      .specs__item {
+        position: relative;
+      }
 
-            div {
-              h3 {
-                font-size: 30px;
-              }
+      .specs__value {
+        font-size: 30px;
+      }
 
-              img {
-                position: absolute;
-                right: 0;
-              }
-            }
-          }
+      .specs__icon {
+        position: absolute;
+        right: 0;
+      }
 
-          li:nth-of-type(1),
-          li:nth-of-type(2) {
-            margin: 0;
-          }
-        }
+      .specs__item--1,
+      .specs__item--2 {
+        margin: 0;
       }
     }
 
