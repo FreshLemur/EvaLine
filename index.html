@@ -97,7 +97,7 @@
       </div>
       <div class="header__mobile">
         <a class="header__logo-link" href="/"><img class="logo" src="./assets/logo.png" alt="Logo" /></a>
-        <button class="header__menu-toggle-button">
+        <button class="header__menu-toggle-button" aria-label="Open menu">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -122,16 +122,26 @@
             </div>
             <ul class="foamiran-wholesale-supplies__features-list">
               <li class="foamiran-wholesale-supplies__feature-item">
-                <img class="foamiran-wholesale-supplies__feature-icon" src="./assets/svg/wholeSaleSvg1.svg" /> Wholesale
-                prices starting from 100 sheets
+                <img
+                  class="foamiran-wholesale-supplies__feature-icon"
+                  src="./assets/svg/wholeSaleSvg1.svg"
+                  aria-hidden="true"
+                />
+                Wholesale prices starting from 100 sheets
               </li>
               <li class="foamiran-wholesale-supplies__feature-item">
-                <img class="foamiran-wholesale-supplies__feature-icon" src="./assets/svg/wholeSaleSvg2.svg" />Size,
-                color, and thickness — by customer
+                <img
+                  class="foamiran-wholesale-supplies__feature-icon"
+                  src="./assets/svg/wholeSaleSvg2.svg"
+                  aria-hidden="true"
+                />Size, color, and thickness — by customer
               </li>
               <li class="foamiran-wholesale-supplies__feature-item">
-                <img class="foamiran-wholesale-supplies__feature-icon" src="./assets/svg/wholeSaleSvg3.svg" />Fast
-                shipping from Bratislava
+                <img
+                  class="foamiran-wholesale-supplies__feature-icon"
+                  src="./assets/svg/wholeSaleSvg3.svg"
+                  aria-hidden="true"
+                />Fast shipping from Bratislava
               </li>
             </ul>
           </div>
@@ -140,7 +150,11 @@
             <input class="foamiran-wholesale-supplies__input" placeholder="Email" type="text" />
             <button class="foamiran-wholesale-supplies__button">
               Leave a request
-              <img class="foamiran-wholesale-supplies__button-icon" src="./assets/svg/arrow-right.svg" />
+              <img
+                class="foamiran-wholesale-supplies__button-icon"
+                src="./assets/svg/arrow-right.svg"
+                aria-hidden="true"
+              />
             </button>
           </form>
         </div>
@@ -151,6 +165,7 @@
             class="foamiran-wholesale-supplies__image"
             fetchpriority="high"
             src="./assets/images/foamirian-desktop.webp"
+            alt="Stacked sheets of vibrant, multi-colored foamiran material in shades of pink, purple, green, and yellow"
           />
         </picture>
       </section>
@@ -159,7 +174,11 @@
           <picture class="offer__picture">
             <source srcset="./assets/images/offer-mobile.webp" media="(max-width: 771px)" />
             <source srcset="./assets/images/offer-tablet.webp" media="(max-width: 1439px)" />
-            <img class="offer__image" src="./assets/images/offer-desktop.webp" />
+            <img
+              class="offer__image"
+              src="./assets/images/offer-desktop.webp"
+              alt="Stacked rolls of EVA foam sheets in various colors including black, green, yellow, orange, pink, purple, and blue"
+            />
           </picture>
 
           <svg
@@ -169,6 +188,7 @@
             viewBox="0 0 140 92"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
           >
             <path
               d="M140 0.0100861C131.332 0.0220872 122.664 0.0220873 114 0.0100864C108.34 -0.273857 103.328 5.48555 103.864 11.2044C104.101 12.7001 104.877 14.0639 106.045 14.9837C111.15 18.7709 114.104 25.5451 113.204 31.9837C112.4 39.5662 106.492 46.1297 99.2759 47.7054C98.4996 47.8054 97.7037 47.8289 96.9507 48.0648C95.8017 48.1248 94.6213 48.2452 93.4956 47.9212C87.2732 47.3933 81.6449 42.9739 79.1411 37.1351C78.7918 36.2514 78.5162 35.3396 78.2329 34.4359C78.1126 33.7721 78.0034 33.1082 77.8481 32.4525C76.9049 26.0177 79.4867 19.1789 84.5718 15.2757C86.2563 14.148 87.2147 12.0684 87.145 10.0169C87.0247 4.84594 82.6109 0.0307777 77.5142 0.0227821C68.5487 0.00683679 59.587 0.0297403 50.6216 0.0100871L50.6216 17.3148L50.5122 17.3148C50.5092 20.8815 50.4886 24.4479 50.4233 28.013C49.1268 33.056 44.2549 37.1993 39.0767 36.7034C37.1864 36.7033 35.5561 35.4112 34.481 33.9036C31.9539 30.4724 28.2623 28.0047 24.2485 26.849C23.616 26.697 22.9757 26.5852 22.3315 26.4613C20.5499 26.0774 18.7058 26.2335 16.9009 26.3255C12.1418 26.9694 7.61482 29.4323 4.52881 33.2396C0.619888 37.8627 -0.854355 44.4655 0.480957 50.4163C2.05696 58.1228 8.60898 64.5175 16.2095 65.5413C18.1114 66.0132 20.1105 65.7816 22.0435 65.6976C22.7771 65.4856 23.5227 65.3451 24.2642 65.1732C28.3905 64.0414 32.1172 61.4142 34.6714 57.8909C35.4089 56.8712 36.4179 56.0909 37.5552 55.595C42.5975 54.2553 47.8232 57.7947 49.9077 62.4417C50.195 63.3296 50.5168 64.2302 50.478 65.1781C50.4703 74.1201 50.4546 83.0582 50.4585 92.0003L140 92.0003L140 0.0100861Z"
@@ -176,7 +196,7 @@
             />
           </svg>
 
-          <img class="offer-puzzle offer__puzzle--bottom-left" src="./assets/svg/puzzle.svg" />
+          <img class="offer-puzzle offer__puzzle--bottom-left" src="./assets/svg/puzzle.svg" aria-hidden="true" />
         </div>
         <div class="offer__content">
           <h2 class="offer__title">EvaLine offers EVA foam sheets</h2>
@@ -187,7 +207,7 @@
                   100
                   <span class="specs__unit">kg/m3</span>
                 </h3>
-                <img class="specs__icon" src="./assets/svg/offer-density.svg" />
+                <img class="specs__icon" src="./assets/svg/offer-density.svg" aria-hidden="true" />
               </div>
               <p class="specs__label">Density</p>
             </li>
@@ -197,7 +217,7 @@
                   40+
                   <span class="specs__unit">options</span>
                 </h3>
-                <img class="specs__icon" src="./assets/svg/offer-colors.svg" />
+                <img class="specs__icon" src="./assets/svg/offer-colors.svg" aria-hidden="true" />
               </div>
               <p class="specs__label">Colors</p>
             </li>
@@ -205,7 +225,7 @@
             <li class="specs__item specs__item--3">
               <div class="specs__value-group">
                 <h3 class="specs__value">2.5 × 1.45 <span class="specs__unit">m</span></h3>
-                <img class="specs__icon" src="./assets/svg/offer-sheet-size.svg" />
+                <img class="specs__icon" src="./assets/svg/offer-sheet-size.svg" aria-hidden="true" />
               </div>
               <p class="specs__label">
                 Sheet size <br />
@@ -218,7 +238,7 @@
                   1–32
                   <span class="specs__unit">mm</span>
                 </h3>
-                <img class="specs__icon" src="./assets/svg/offer-thickness.svg" />
+                <img class="specs__icon" src="./assets/svg/offer-thickness.svg" aria-hidden="true" />
               </div>
               <p class="specs__label">Thickness</p>
             </li>
@@ -227,16 +247,23 @@
             <h3 class="material-properties__title">Material properties:</h3>
             <ul class="material-properties__list">
               <li class="material-properties__item">
-                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" />Flexible and elastic
+                <img
+                  class="material-properties__bullet"
+                  src="./assets/svg/blue-circle.svg"
+                  aria-hidden="true"
+                />Flexible and elastic
               </li>
               <li class="material-properties__item">
-                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" />Easy to cut
+                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" aria-hidden="true" />Easy to
+                cut
               </li>
               <li class="material-properties__item">
-                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" />Can be glued
+                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" aria-hidden="true" />Can be
+                glued
               </li>
               <li class="material-properties__item">
-                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" />Easily molded and shaped
+                <img class="material-properties__bullet" src="./assets/svg/blue-circle.svg" aria-hidden="true" />Easily
+                molded and shaped
               </li>
             </ul>
           </div>
@@ -248,7 +275,11 @@
         <ul class="application-ways__flex">
           <li class="application-ways__card">
             <div class="application-ways__card-header">
-              <img class="application-ways__icon" src="./assets/svg/application-ways-floristics-icon.svg" />
+              <img
+                class="application-ways__icon"
+                src="./assets/svg/application-ways-floristics-icon.svg"
+                aria-hidden="true"
+              />
               <h3 class="application-ways__heading">Floristics & Décor</h3>
             </div>
             <ul class="application-ways__list">
@@ -268,7 +299,11 @@
           </li>
           <li class="application-ways__card">
             <div class="application-ways__card-header">
-              <img class="application-ways__icon" src="./assets/svg/application-ways-gaming-industry-icon.svg" />
+              <img
+                class="application-ways__icon"
+                src="./assets/svg/application-ways-gaming-industry-icon.svg"
+                aria-hidden="true"
+              />
               <h3 class="application-ways__heading">Gaming Industry</h3>
             </div>
             <ul class="application-ways__list">
@@ -288,7 +323,11 @@
           </li>
           <li class="application-ways__card">
             <div class="application-ways__card-header">
-              <img class="application-ways__icon" src="./assets/svg/application-ways-education-icon.svg" />
+              <img
+                class="application-ways__icon"
+                src="./assets/svg/application-ways-education-icon.svg"
+                aria-hidden="true"
+              />
               <h3 class="application-ways__heading">Education & Development</h3>
             </div>
             <ul class="application-ways__list">
@@ -308,7 +347,11 @@
           </li>
           <li class="application-ways__card">
             <div class="application-ways__card-header">
-              <img class="application-ways__icon" src="./assets/svg/application-ways-photography-icon.svg" />
+              <img
+                class="application-ways__icon"
+                src="./assets/svg/application-ways-photography-icon.svg"
+                aria-hidden="true"
+              />
               <h3 class="application-ways__heading">Stage & Photography</h3>
             </div>
             <ul class="application-ways__list">
@@ -329,7 +372,11 @@
           </li>
           <li class="application-ways__card">
             <div class="application-ways__card-header">
-              <img class="application-ways__icon" src="./assets/svg/application-ways-handmade-icon.svg" />
+              <img
+                class="application-ways__icon"
+                src="./assets/svg/application-ways-handmade-icon.svg"
+                aria-hidden="true"
+              />
               <h3 class="application-ways__heading">Handmade & Creativity</h3>
             </div>
 
@@ -350,7 +397,11 @@
           </li>
           <li class="application-ways__card">
             <div class="application-ways__card-header">
-              <img class="application-ways__icon" src="./assets/svg/application-ways-gift-icon.svg" />
+              <img
+                class="application-ways__icon"
+                src="./assets/svg/application-ways-gift-icon.svg"
+                aria-hidden="true"
+              />
               <h3 class="application-ways__heading">Packaging & Advertising</h3>
             </div>
 
@@ -367,7 +418,11 @@
           </li>
           <li class="application-ways__card">
             <div class="application-ways__card-header">
-              <img class="application-ways__icon" src="./assets/svg/application-ways-model-icon.svg" />
+              <img
+                class="application-ways__icon"
+                src="./assets/svg/application-ways-model-icon.svg"
+                aria-hidden="true"
+              />
               <h3 class="application-ways__heading">Model Making & Prototyping</h3>
             </div>
 
@@ -384,7 +439,11 @@
           </li>
           <li class="application-ways__card">
             <div class="application-ways__card-header">
-              <img class="application-ways__icon" src="./assets/svg/application-ways-textiles-icon.svg" />
+              <img
+                class="application-ways__icon"
+                src="./assets/svg/application-ways-textiles-icon.svg"
+                aria-hidden="true"
+              />
               <h3 class="application-ways__heading">Textiles & Sewing</h3>
             </div>
 
@@ -513,9 +572,13 @@
 
         <aside class="form-promo">
           <div class="form-promo__content">
-            <img src="./assets/svg/puzzle.svg" class="form-promo__puzzle" />
-            <img src="./assets/svg/puzzle.svg" class="form-promo__puzzle" />
-            <img class="form-promo__icon-handshake" src="./assets/svg/form-promo__icon-handshake.svg" />
+            <img src="./assets/svg/puzzle.svg" class="form-promo__puzzle" aria-hidden="true" />
+            <img src="./assets/svg/puzzle.svg" class="form-promo__puzzle" aria-hidden="true" />
+            <img
+              class="form-promo__icon-handshake"
+              src="./assets/svg/form-promo__icon-handshake.svg"
+              aria-hidden="true"
+            />
             <h3 class="form-promo__title">
               <span class="form-promo__title--white">Leave a request</span> and find out the terms of cooperation
             </h3>
@@ -524,7 +587,8 @@
               <input class="form-promo__input" type="tel" placeholder="Phone" aria-label="Phone number" required />
               <input class="form-promo__input" type="email" placeholder="Email" aria-label="Email address" required />
               <button class="form-promo__button" type="submit">
-                Leave a request <img class="form-promo__button--arrow" src="./assets/svg/arrow-right.svg" />
+                Leave a request
+                <img class="form-promo__button--arrow" src="./assets/svg/arrow-right.svg" aria-hidden="true" />
               </button>
             </form>
           </div>
@@ -574,7 +638,7 @@
           <li class="benefit-item wholesale-callout">
             <p class="wholesale-callout__count">
               100 <span class="wholesale-callout__count--text">sheets</span>
-              <img class="wholesale-callout__image" src="./assets/svg/wholesale-callout-icon.svg" />
+              <img class="wholesale-callout__image" src="./assets/svg/wholesale-callout-icon.svg" aria-hidden="true" />
             </p>
             <p class="wholesale-callout__text">
               Wholesale orders start from 100 sheets, with custom discounts available for large-volume buyers
@@ -608,7 +672,7 @@
             />
 
             <button type="submit" class="request-form__button">
-              Leave a request <img src="./assets/svg/arrow-right.svg" />
+              Leave a request <img src="./assets/svg/arrow-right.svg" aria-hidden="true" />
             </button>
           </form>
         </div>
@@ -631,26 +695,42 @@
         </div>
 
         <div class="cooperation-options__content">
-          <img class="cooperation-options__image" src="./assets/images/cooperation-options__image.webp" />
+          <img
+            class="cooperation-options__image"
+            src="./assets/images/cooperation-options__image.webp"
+            aria-label="A fan-shaped arrangement of colorful foam sheets next to handmade pink foam flowers"
+          />
 
           <div class="cooperation-options__option">
             <h3 class="cooperation-options__option-title">Custom Production</h3>
             <p class="cooperation-options__option-subtitle">AVAILABLE OPTIONS:</p>
             <ul class="cooperation-options__list">
               <li class="cooperation-options__list-item">
-                <img class="cooperation-options__list-item--blue-circle" src="./assets/svg/blue-circle.svg" />
+                <img
+                  class="cooperation-options__list-item--blue-circle"
+                  src="./assets/svg/blue-circle.svg"
+                  aria-hidden="true"
+                />
                 <p class="cooperation-options__list-item-text">
                   Production of sheets according to customer specifications
                 </p>
               </li>
               <li class="cooperation-options__list-item">
-                <img class="cooperation-options__list-item--blue-circle" src="./assets/svg/blue-circle.svg" />
+                <img
+                  class="cooperation-options__list-item--blue-circle"
+                  src="./assets/svg/blue-circle.svg"
+                  aria-hidden="true"
+                />
                 <p class="cooperation-options__list-item-text">
                   Development of a customized material formula tailored to specific needs
                 </p>
               </li>
               <li class="cooperation-options__list-item">
-                <img class="cooperation-options__list-item--blue-circle" src="./assets/svg/blue-circle.svg" />
+                <img
+                  class="cooperation-options__list-item--blue-circle"
+                  src="./assets/svg/blue-circle.svg"
+                  aria-hidden="true"
+                />
                 <p class="cooperation-options__list-item-text">
                   Production of sheets according to customer specifications
                 </p>
@@ -664,15 +744,27 @@
               <p class="cooperation-options__option-subtitle">INCLUDES:</p>
               <ul class="cooperation-options__list">
                 <li class="cooperation-options__list-item">
-                  <img class="cooperation-options__list-item--blue-circle" src="./assets/svg/blue-circle.svg" />
+                  <img
+                    class="cooperation-options__list-item--blue-circle"
+                    src="./assets/svg/blue-circle.svg"
+                    aria-hidden="true"
+                  />
                   <p class="cooperation-options__list-item-text">Selection from the store's product range</p>
                 </li>
                 <li class="cooperation-options__list-item">
-                  <img class="cooperation-options__list-item--blue-circle" src="./assets/svg/blue-circle.svg" />
+                  <img
+                    class="cooperation-options__list-item--blue-circle"
+                    src="./assets/svg/blue-circle.svg"
+                    aria-hidden="true"
+                  />
                   <p class="cooperation-options__list-item-text">Packaging</p>
                 </li>
                 <li class="cooperation-options__list-item">
-                  <img class="cooperation-options__list-item--blue-circle" src="./assets/svg/blue-circle.svg" />
+                  <img
+                    class="cooperation-options__list-item--blue-circle"
+                    src="./assets/svg/blue-circle.svg"
+                    aria-hidden="true"
+                  />
                   <p class="cooperation-options__list-item-text">Shipment from the warehouse</p>
                 </li>
               </ul>
@@ -682,6 +774,7 @@
               <img
                 class="cooperation-options__delivery-icon"
                 src="./assets/svg/cooperation-options__delivery-icon.svg"
+                aria-hidden="true"
               />
               <p class="cooperation-options__delivery-text">
                 We offer regular and reliable deliveries in both large and small volumes
@@ -902,25 +995,41 @@
 
           <ul class="working__features-list">
             <li class="working__feature-item">
-              <img src="./assets/svg/working__feature-icon-quality.svg" class="working__feature-icon" />
+              <img
+                src="./assets/svg/working__feature-icon-quality.svg"
+                class="working__feature-icon"
+                aria-hidden="true"
+              />
               <p class="working__feature-text">
                 We provide quality and compliance certificates for operation within the EU
               </p>
             </li>
             <li class="working__feature-item">
-              <img src="./assets/svg/working__feature-icon-consultation.svg" class="working__feature-icon" />
+              <img
+                src="./assets/svg/working__feature-icon-consultation.svg"
+                class="working__feature-icon"
+                aria-hidden="true"
+              />
               <p class="working__feature-text">Offer technologist consultations on working with foamiran</p>
             </li>
             <li class="working__feature-item">
-              <img src="./assets/svg/working__feature-icon-laboratory.svg" class="working__feature-icon" />
+              <img src="./assets/svg/aria-hidden="true"/>
               <p class="working__feature-text">Test all raw materials in our in-house laboratory</p>
             </li>
             <li class="working__feature-item">
-              <img src="./assets/svg/working__feature-icon-test.svg" class="working__feature-icon" />
+              <img
+                src="./assets/svg/working__feature-icon-laboratory.svg"
+                class="working__feature-icon"
+                aria-hidden="true"
+              />
               <p class="working__feature-text">Send test batches for product evaluation</p>
             </li>
             <li class="working__feature-item">
-              <img src="./assets/svg/working__feature-icon-warehouse.svg" class="working__feature-icon" />
+              <img
+                src="./assets/svg/working__feature-icon-warehouse.svg"
+                class="working__feature-icon"
+                aria-hidden="true"
+              />
               <p class="working__feature-text">
                 Maintain a warehouse in Bratislava, ensuring fast delivery across Europe
               </p>
@@ -929,9 +1038,9 @@
         </div>
 
         <aside class="working__form-pillar">
-          <img src="./assets/svg/puzzle.svg" class="working__form-puzzle working__form-puzzle-1" />
-          <img src="./assets/svg/puzzle.svg" class="working__form-puzzle working__form-puzzle-2" />
-          <img class="working__form-icon" src="./assets/svg/working__form-icon.svg" />
+          <img src="./assets/svg/puzzle.svg" class="working__form-puzzle working__form-puzzle-1" aria-hidden="true" />
+          <img src="./assets/svg/puzzle.svg" class="working__form-puzzle working__form-puzzle-2" aria-hidden="true" />
+          <img class="working__form-icon" src="./assets/svg/working__form-icon.svg" aria-hidden="true" />
           <h3 class="working__form-text">
             <span class="working__form-text--white">Contact us today</span> to start using high-quality certified
             EvaLine foamiran as soon as next month
@@ -941,7 +1050,8 @@
             <input type="tel" class="working__form-input" placeholder="Phone" name="phone" />
             <input type="email" class="working__form-input" placeholder="Email" name="email" />
             <button type="submit" class="working__form-button">
-              Request a Consultation <img class="working-form__button--arrow" src="./assets/svg/arrow-right.svg" />
+              Request a Consultation
+              <img class="working-form__button--arrow" src="./assets/svg/arrow-right.svg" aria-hidden="true" />
             </button>
           </form>
         </aside>
@@ -951,36 +1061,60 @@
         <li class="gallery__item gallery__item--velvet-bows">
           <picture>
             <source srcset="./assets/images/velvet-blows-tablet.webp" media="(max-width: 1439px)" />
-            <img class="gallery__image" src="./assets/images/velvet-bows.webp" />
+            <img
+              class="gallery__image"
+              src="./assets/images/velvet-bows.webp"
+              alt="Large decorative red bows made of foamiran displayed in a holiday setting with Christmas trees"
+            />
           </picture>
         </li>
         <li class="gallery__item gallery__item--pink-roses">
           <picture>
             <source srcset="./assets/images/pink-roses-tablet.webp" media="(max-width: 1439px)" />
-            <img class="gallery__image" src="./assets/images/pink-roses.webp" />
+            <img
+              class="gallery__image"
+              src="./assets/images/pink-roses.webp"
+              alt="Small handmade pink foamiran rose buds for crafts and floral arrangements"
+            />
           </picture>
         </li>
         <li class="gallery__item gallery__item--wings">
           <picture>
             <source srcset="./assets/images/wings-tablet.webp" media="(max-width: 1439px)" />
-            <img class="gallery__image" src="./assets/images/wings.webp" />
+            <img
+              class="gallery__image"
+              src="./assets/images/wings.webp"
+              alt="Large-scale ornate golden wings prop created from textured EVA foam for photo shoots or events"
+            />
           </picture>
         </li>
         <li class="gallery__item gallery__item--hydrangea-flowers">
           <picture>
             <source srcset="./assets/images/hydrangea-flowers-tablet.webp" media="(max-width: 1439px)" />
-            <img class="gallery__image" src="./assets/images/hydrangea-flowers.webp" />
+            <img
+              class="gallery__image"
+              src="./assets/images/hydrangea-flowers.webp"
+              alt="Detailed light blue and white artificial hydrangea flowers crafted from thin foamiran material"
+            />
           </picture>
         </li>
         <li class="gallery__item gallery__item--paper-roses">
           <picture>
             <source srcset="./assets/images/paper-roses-tablet.webp" media="(max-width: 1439px)" />
-            <img class="gallery__image" src="./assets/images/paper-roses.webp" />
+            <img
+              class="gallery__image"
+              src="./assets/images/paper-roses.webp"
+              alt="Large stem-mounted red decorative roses handcrafted from flexible EVA foam sheets"
+            />
           </picture>
         </li>
 
         <li class="gallery__item gallery__item--cherry-blossoms">
-          <img class="gallery__image" src="./assets/images/cherry-blossoms.webp" />
+          <img
+            class="gallery__image"
+            src="./assets/images/cherry-blossoms.webp"
+            alt="A decorative indoor tree covered in realistic pink cherry blossoms made from foamiran material"
+          />
         </li>
       </ul>
     </main>
@@ -1061,18 +1195,21 @@
         <p class="footer__bottom--text">EVAline 2023 © Production of products from EVA material</p>
         <ul class="footer__bottom--socials">
           <li class="footer__bottom--social-item">
-            <a class="footer__social-link"
-              ><img class="footer__social-link--image facebook-icon" src="./assets/svg/facebook.svg"
+            <a class="footer__social-link" aria-label="Follow EvaLine on Facebook"
+              ><img class="footer__social-link--image facebook-icon" src="./assets/svg/facebook.svg" aria-hidden="true"
             /></a>
           </li>
           <li class="footer__bottom--social-item">
-            <a class="footer__social-link"
-              ><img class="footer__social-link--image instagram-icon" src="./assets/svg/instagram.svg"
+            <a class="footer__social-link" aria-label="Follow EvaLine on Instagram"
+              ><img
+                class="footer__social-link--image instagram-icon"
+                src="./assets/svg/instagram.svg"
+                aria-hidden="true"
             /></a>
           </li>
           <li class="footer__bottom--social-item">
-            <a class="footer__social-link"
-              ><img class="footer__social-link--image youtube-icon" src="./assets/svg/youtube.svg"
+            <a class="footer__social-link" aria-label="Visit the EvaLine YouTube channel"
+              ><img aria-hidden="true" class="footer__social-link--image youtube-icon" src="./assets/svg/youtube.svg"
             /></a>
           </li>
         </ul>
