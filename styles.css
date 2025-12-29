@@ -2124,13 +2124,21 @@ main {
   .footer {
     .footer__top {
       flex-direction: column;
-      align-items: start;
+      align-items: center;
       padding: 40px 10px;
       gap: 30px;
     }
 
     .footer__list--wrapper {
       gap: 16px;
+
+      h3 {
+        text-align: center;
+      }
+    }
+
+    .footer__item {
+      justify-content: center;
     }
 
     .footer__list--business-wrapper,
