@@ -142,7 +142,7 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   height: 140px;
-  background-color: #f5f9fb;
+  background-color: var(--color-white);
   padding-bottom: 5px;
   z-index: 10;
 
@@ -1275,12 +1275,14 @@ main {
 .footer {
   display: flex;
   flex-direction: column;
+  margin-top: 110px;
 
   .footer__top {
-    background-color: #f5f9fb;
+    background-color: var(--color-white);
     display: flex;
     justify-content: space-between;
     padding: 60px var(--desktop-global-padding-inline);
+    border-top: 1px solid var(--color-black);
   }
 
   .footer__list--wrapper {
