@@ -1,9 +1,10 @@
 @font-face {
   font-family: 'Gilroy';
   font-display: swap;
-  src: url('/assets/fonts/Gilroy-Regular.eot');
-  src: url('/assets/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Gilroy-Regular.woff') format('woff'), url('/assets/fonts/Gilroy-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/Gilroy-Regular.eot');
+  src: url('./assets/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Gilroy-Regular.woff') format('woff'),
+    url('./assets/fonts/Gilroy-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -11,10 +12,10 @@
 @font-face {
   font-family: 'Gilroy';
   font-display: swap;
-  src: url('/assets/fonts/Gilroy-SemiBold.eot');
-  src: url('/assets/fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Gilroy-SemiBold.woff') format('woff'),
-    url('/assets/fonts/Gilroy-SemiBold.ttf') format('truetype');
+  src: url('./assets/fonts/Gilroy-SemiBold.eot');
+  src: url('./assets/fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('./assets/fonts/Gilroy-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
@@ -22,9 +23,9 @@
 @font-face {
   font-family: 'Gilroy';
   font-display: swap;
-  src: url('/assets/fonts/Gilroy-Bold.eot');
-  src: url('/assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Gilroy-Bold.woff') format('woff'), url('/assets/fonts/Gilroy-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/Gilroy-Bold.eot');
+  src: url('./assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Gilroy-Bold.woff') format('woff'), url('./assets/fonts/Gilroy-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -32,10 +33,10 @@
 @font-face {
   font-family: 'Gilroy';
   font-display: swap;
-  src: url('/assets/fonts/Gilroy-ExtraBold.eot');
-  src: url('/assets/fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Gilroy-ExtraBold.woff') format('woff'),
-    url('/assets/fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  src: url('./assets/fonts/Gilroy-ExtraBold.eot');
+  src: url('./assets/fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Gilroy-ExtraBold.woff') format('woff'),
+    url('./assets/fonts/Gilroy-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
@@ -43,9 +44,9 @@
 @font-face {
   font-family: 'Gilroy';
   font-display: swap;
-  src: url('/assets/fonts/Gilroy-Heavy.eot');
-  src: url('/assets/fonts/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Gilroy-Heavy.woff') format('woff'), url('/assets/fonts/Gilroy-Heavy.ttf') format('truetype');
+  src: url('./assets/fonts/Gilroy-Heavy.eot');
+  src: url('./assets/fonts/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Gilroy-Heavy.woff') format('woff'), url('./assets/fonts/Gilroy-Heavy.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
